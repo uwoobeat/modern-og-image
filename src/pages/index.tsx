@@ -9,12 +9,20 @@ export default function Page() {
 
   ogImageUrl.searchParams.set(
     'title',
-    'Modern Open Graph Image Generator\nCreate stylish OG images in seconds',
+    encodeURIComponent(
+      'Modern Open Graph Image Generator\nCreate stylish OG images in seconds',
+    ),
   );
-  ogImageUrl.searchParams.set('category', 'Development');
-  ogImageUrl.searchParams.set('author', 'Jaehyun Ahn');
-  ogImageUrl.searchParams.set('date', new Date().toLocaleDateString('en-US'));
-  ogImageUrl.searchParams.set('blogUrl', 'modern-og-image.vercel.app');
+  ogImageUrl.searchParams.set('category', encodeURIComponent('Development'));
+  ogImageUrl.searchParams.set('author', encodeURIComponent('Jaehyun Ahn'));
+  ogImageUrl.searchParams.set(
+    'date',
+    encodeURIComponent(new Date().toLocaleDateString('en-US')),
+  );
+  ogImageUrl.searchParams.set(
+    'blogUrl',
+    encodeURIComponent('modern-og-image.vercel.app'),
+  );
 
   return (
     <div>

@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div>
       <Head>
-        <title>modern-og-image</title>
+        <title>Modern OG Image Generator</title>
         <meta
           name="description"
           content="A modern Open Graph image generator for your blog posts"

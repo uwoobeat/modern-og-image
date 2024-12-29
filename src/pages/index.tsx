@@ -32,7 +32,9 @@ export default function Page() {
           name="description"
           content="A modern Open Graph image generator for your blog posts"
         />
-        <meta property="og:title" content="modern-og-image" />
+        <meta property="og:type" content="website" />{' '}
+        <meta property="og:url" content={baseUrl} />
+        <meta property="og:title" content="Modern Open Graph Image Generator" />
         <meta
           property="og:description"
           content="A modern Open Graph image generator for your blog posts"
@@ -40,6 +42,8 @@ export default function Page() {
         <meta property="og:image" content={ogImageUrl.toString()} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Modern OG Image Generator" />
       </Head>
       <h1>A page with Open Graph Image.</h1>
     </div>

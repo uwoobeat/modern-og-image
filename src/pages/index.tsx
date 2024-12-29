@@ -8,7 +8,7 @@ export default function Page() {
   ogImageUrl.searchParams.set(
     'title',
     encodeURIComponent(
-      'Modern Open Graph Image Generator\nCreate stylish OG images in seconds',
+      'Modern OG Image Generator:\nCreate stylish OG images in seconds',
     ),
   );
   ogImageUrl.searchParams.set('category', encodeURIComponent('Development'));

@@ -1,9 +1,7 @@
 import Head from 'next/head';
 
 export default function Page() {
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : 'https://modern-og-image.vercel.app';
+  const baseUrl = 'https://modern-og-image.vercel.app';
 
   const ogImageUrl = new URL('/api/og', baseUrl);
 
